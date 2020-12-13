@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!-- Main Body -->
+<section role="main start page" id="start-page">
+    <h1>Quiz Start Page</h1>
+    <div id="start-title">
+    <h1>Mobile Attribution Quiz</h1></div>
+    <div id="intro-page">
+      <p>
+       Test your basic Mobile Attribution knowledge
+      </p>
+    </div>
+    <div id="start-page-button">
+      <button id="js-start-button">BEGIN</button>
+    </div>
+</section>
+
+<!-- Questions -->
+
+<section id="results" role= "js rendered question set">
+<h1>Questions</h1>
+<form name="quizForm">
+<div class="question-frame">
+
+    <div class="box">
+    <h3>1. What is mobile attribution?</h3>
+      <input type="radio" name="q1" value="a" id="1a"/> A) Coding an app for a specific platform<br>
+      <input type="radio" name="q1" value="b" id="1b"/> B) Connecting mobile data points, typically an advertisement with an installation<br>
+      <input type="radio" name="q1" value="c" id="1c"/> C) Assigning credit to an app developer on the developer notes page<br>
+      <input type="radio" name="q1" value="d" id="1d"/> D) Explaining causes for behaviors and events, specifically physical actions
+    </div>
+
+    <div class="box">
+    <h3>2. What is the device identifier on iOS devices?</h3>
+      <input type="radio" name="q2" value="a" id="2a"/> A) ADID<br>
+      <input type="radio" name="q2" value="b" id="2b"/> B) RIDA<br>
+      <input type="radio" name="q2" value="c" id="2c"/> C) Email Address<br>
+      <input type="radio" name="q2" value="d" id="2d"/> D) IDFA
+    </div>
+
+    <div class="box">
+    <h3>3. What does LAT stand for?</h3>
+      <input type="radio" name="q3" value="a" id="3a"/> A) Limit Ad Tracking<br>
+      <input type="radio" name="q3" value="b" id="3b"/> B) Loss of Attribution Table<br>
+      <input type="radio" name="q3" value="c" id="3c"/> C) Limited Attribution Time<br>
+      <input type="radio" name="q3" value="d" id="3d"/> D) Linking Apple Table
+    </div>
+
+    <div class="box">
+    <h3>4. Which of the following is NOT a mobile attribution provider?</h3>
+      <input type="radio" name="q4" value="a" id="4a"/> A) AppsFlyer<br>
+      <input type="radio" name="q4" value="b" id="4b"/> B) AdColony<br>
+      <input type="radio" name="q4" value="c" id="4c"/> C) Kochava<br>
+      <input type="radio" name="q4" value="d" id="4d"/> D) Branch
+    </div>
+
+    <div class="box">
+    <h3>5. What is the most downloaded app in 2020?</h3>
+      <input type="radio" name="q5" value="a" id="5a"/> A) WhatsApp<br>
+      <input type="radio" name="q5" value="b" id="5b"/> B) Audible<br>
+      <input type="radio" name="q5" value="c" id="5c"/> C) TikTok<br>
+      <input type="radio" name="q5" value="d" id="5d"/> D) Disney+
+    </div>
+    
+    </form>
+  </section>
+
+<!-- Wrong Answer Response -->
+      <section id="response-page">
+        <h1>Wrong Answer Screen</h1>
+            <h2>Sorry, that is incorrect.  The correct answer was ___!</h2>
+        </section>
+        <button id="js-next-button">Next Question</button>
+
+<!-- Correct Answer Response -->
+        <section id="response-page">
+        <h1>Right Answer Screen</h1>
+            <h2 >_______ is correct!</h2>
+        </section>
+        <button id="js-next-button">Next Question</button>
+
+<!-- Quiz Results Page -->
+        <section id="results-page">
+          <h1>Quiz Results</h1>
+            <h2>You got ____ correct out of 5, for a score of ___%</h2>
+          </section>
+          <button id="js-restart-button">Give it another shot?</button>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
